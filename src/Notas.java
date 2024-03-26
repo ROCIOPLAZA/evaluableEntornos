@@ -8,7 +8,7 @@ public class Notas {
 
     // declaramos la variables que nos hacen falta
     double unidad1, unidad2, unidad3;
-    double acu1, acu2, acu3, def;
+    double acumulador1, acumulador2, acumulador3, def;
     // utilizames ecaner para poder introducir datos
     Scanner entrada = new Scanner(System.in);
 
@@ -72,11 +72,11 @@ public class Notas {
      * @param uf3 Nota tercera unidad formativa.
      */
     public void calculoNotas() {
-        acu1 = unidad1 * 0.35;
-        acu2 = unidad2 * 0.35;
-        acu3 = unidad3 * 0.30;
+        acumulador1 = unidad1 * 0.35;
+        acumulador2 = unidad2 * 0.35;
+        acumulador3 = unidad3 * 0.30;
 
-        def = acu1 + acu2 + acu3;
+        def = acumulador1 + acumulador2 + acumulador3;
 
     }
 
@@ -95,9 +95,9 @@ public class Notas {
         System.out.println(" nota2 = " + unidad2);
         System.out.println(" nota3 = " + unidad3);
 
-        System.out.println(" Acumulado 1 = " + acu1);
-        System.out.println(" Acumulado 2 = " + acu2);
-        System.out.println(" Acumulado 3 = " + acu3);
+        System.out.println(" Acumulado 1 = " + acumulador1);
+        System.out.println(" Acumulado 2 = " + acumulador2);
+        System.out.println(" Acumulado 3 = " + acumulador3);
 
         System.out.println(" Nota definitiva es = " + def);
 
@@ -110,12 +110,12 @@ public class Notas {
     public void aprobado() {
 
         if (def < 5 && def >= 0) {
-            System.out.println("Suspendio");
+            System.out.println("La unidad formativa fue suspendida");
         } else {
             if (def >= 5 && def <= 10) {
-                System.out.println("Aprobado");
+                System.out.println("La unidad formativa fue aprobada");
             } else {
-                System.out.println(" Error en la notas");
+                System.out.println(" Error en la notas,ingresela de nuevo por favor");
             }
         }
     }
