@@ -39,26 +39,26 @@ public class Notas {
     public void comprobacion() {
 
         if (unidad1 > 10) {
-            System.out.println(" Nota1 mal introducida");
+            System.out.println(" La nota 1 esta mal introducida");
 
         } else {
-            System.out.println(" Nota1 correcta");
+            System.out.println(" La nota 1 es correcta");
         }
 
         if (unidad2 > 10) {
-            System.out.println(" Nota2 mal introducida");
+            System.out.println(" La nota 2 esta mal introducida");
 
         } else {
-            System.out.println(" Nota2 correcta");
+            System.out.println(" La nota 2 es correcta");
         }
 
         if (unidad3 > 10) {
-            System.out.println(" Nota3 mal introducida");
+            System.out.println(" La nota 3 esta mal introducida");
 
         }
 
         else {
-            System.out.println(" Nota3 correcta");
+            System.out.println(" La nota 3 es correcta");
         }
     }
 
